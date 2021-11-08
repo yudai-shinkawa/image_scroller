@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and After Image Slider (temp)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="images">
+            <div class="img-1"></div>
+            <div class="img-2"></div>
+        </div>
+        <div class="slider">
+            <div class="midline">
+                <span></span>
+            </div>
+            <input type="range" min="0" max="100" value="50">
+        </div>           
+    </div>
+    <script>
+        const slider = document.querySelector(".slider input");
+        const img = document.querySelector(".images .img-2");
+        const mid_line = document.querySelector(".slider .midline");
+        slider.oninput = () =>{
+            let slide = slider.value;
+            mid_line.style.left = slide + "%";
+            img.style.width = slide + "%";
+        }
+    </script>
+</body>
+</html>
