@@ -27,13 +27,13 @@ html,body{
     height: 100%;
     width: 110%;
     left: 40px;
-    background: url(images/enviro_1.JPG) no-repeat;
+    background: url(images/enviro1.JPG) no-repeat;
 }
 .wrapper .images .img-2 {
     position: absolute;
     height: 100%;
     width: 50%;
-    background: url(images/enviro_2.JPG) no-repeat;
+    background: url(images/enviro2.JPG) no-repeat;
 }
 
 .wrapper .slider{
